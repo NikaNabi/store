@@ -1,0 +1,35 @@
+/* src/styles/App.css */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .product-card img {
+    width: 100%;
+  }
+  
+  .cart {
+    margin-top: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item img {
+    width: 50px;
+  }
+  
+  .cart-item input {
+    width: 50px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
