@@ -72,5 +72,17 @@ const App = () => {
     </div>
   );
 };
+// src/App.js
+import React from 'react';
+import ProductList from './components/ProductList';
+
+const App = () => {
+  return (
+    <div className="App">
+      <h1>Добро пожаловать в интернет-магазин</h1>
+      <ProductList />
+    </div>
+  );
+};
 
 export default App;
