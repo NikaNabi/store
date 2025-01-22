@@ -129,15 +129,57 @@ footer {
 }
 
 /* Анимации */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #10b981;
   }
-  to {
-      opacity: 1;
+  50% {
+    box-shadow: 0 0 20px #10b981;
   }
+  100% {
+    box-shadow: 0 0 5px #10b981;
+  }
+}
+
+.active {
+  animation: glow 1.5s infinite;
 }
 
 .hero h1, .hero p {
   animation: fadeIn 2s ease-in-out;
+}
+button{
+  background: linear-gradient(90deg,#1e3a8a,#9333ea);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #9333ea;
+}
+.card {
+  background-color: #1f2937;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(16, 185, 129, 0.5);
+}
+.card img {
+  width: 100%;
+  border-bottom: 2px solid #10b981;
+}
+.card .info {
+  padding: 10px;
+  text-align: center;
 }
