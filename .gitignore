@@ -1,0 +1,9 @@
+node_modules
+        build/
+        game-store/
+        node_modeles/
+        package-lock.json
+        package.json
+        public/
+        src/
+        yarn.lock
